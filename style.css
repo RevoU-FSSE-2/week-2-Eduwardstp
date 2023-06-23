@@ -2,31 +2,22 @@
     margin: 0;
     padding: 0;
 }
-@media only screen and (max-width: 768px) {
-    * {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    * {
-        width: 100%;
-    }
-}
 body {
     font-family: sans-serif;
-    background-color: black;
+    background-color: white;
 }
 
 /* navbar */
 nav {
+    position: fixed;
     display: flex;
     background-color: black;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 16px 1;
     color: white;
     align-items: center;
+    width: 100%;
+    margin-top: -15px;
 }
 
 .logo {
@@ -52,7 +43,7 @@ nav ul {
     display: flex;
     list-style: none;
     width: 20%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 nav ul {
@@ -78,6 +69,8 @@ nav ul {
 nav ul li a {
     color: white;
     text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav ul li a:hover {
@@ -127,7 +120,7 @@ nav ul li a:hover {
 /* artikel */
 
 article {
-    color: white;
+    color: black;
 }
 
 article div h1 {
@@ -135,19 +128,17 @@ article div h1 {
 }
 
 /* section 1 */
+
 .toparticel1 {
     text-align: center;
     text-transform: uppercase;
 }
 
-article h4 {
-    text-indent: 50px;
-    text-align: justify;
-    letter-spacing: 1px;
-}
-
 /* section 2 */
 
+.section2 {
+    margin-top: 20px;
+}
 
 /* section 3 / before-after */
 div.gallery {
@@ -186,8 +177,67 @@ div.desc {
     }
 }
 
+.kesimpulan {
+    text-indent: 50px;
+    margin-top: 50px;
+}
+
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
+
+/* Checkbox - Radio Button */
+
+fieldset {
+    margin: 10px 0;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 10px 0;
+    display: block;
+  }
+
+.keluhan-text {
+    margin-top: 8px;
+    margin-bottom: -10px;
+}
+
+.keluhan-box {
+    margin-bottom: 8px;
+}
+
+#form-section {
+    background-color: black;
+    color: white;
+    padding: 2px;
+    margin-top: 16px;
+  }
+  
+#form-section form {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+button[type="submit"] {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+button[type="submit"]:hover {
+      background-color: red;
+    }
